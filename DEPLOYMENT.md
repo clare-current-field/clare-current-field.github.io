@@ -17,3 +17,6 @@ audit findings, measure CPU usage on Workers Free, and finalize privacy/SEO sett
 Preserve existing email DNS records when connecting the domain.
 
 The original GitHub website is preserved on `backup/pre-cloudflare-2026-09-23`.
+
+Git integration connected on 2026-09-23 to the existing `current-field` Worker.
+This documentation update triggers the initial build; no page content is changed.
