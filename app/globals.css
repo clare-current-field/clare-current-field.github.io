@@ -383,8 +383,10 @@ h1.is-visible { opacity:1; filter:blur(0); transform:translate(-50%,-50%); }
   h1 { width:max-content; max-width:92%; padding:.38em .5em .42em; border-radius:12px; font-size:min(28px,5cqw); white-space:normal; }
   .hero-image h1 { padding-inline:.35em; }
   .hero-image h1 span { display:block; }
-  .hero { padding:0; }
-  .hero-image { aspect-ratio:8/5; container-type:inline-size; }
+  .hero { padding:0; background:#252a24; }
+  .hero-image { aspect-ratio:8/5; container-type:inline-size; background:#252a24; clip-path:inset(0); }
+  /* Overdraw the mobile crop edge to prevent a fractional-pixel seam. */
+  .hero-image > img { height:calc(100% + 1px) !important; }
   .hero-image img { object-position:center bottom; transform:scale(1.15); transform-origin:center bottom; }
   .belief { grid-template-columns:1fr; gap:0; }
   .belief-image { grid-area:1/1; }
